@@ -1,8 +1,41 @@
 /* Scss Document */
 
-$color-primary: #E65C24;
-$color-secondary: #646463;
+$color-primary: #004f9e;
+$color-secondary: #e53212;
+$color-tertiary: #009ee3;
 $color-black: #000000;
+$color-white: #FFFFFF;
 
-$font-primary: Sica-Regular, sans-serif;
-$font-primaryLight: Sica-Light, sans-serif;
+
+$light-color-gray: lighten($color-black, 80% );
+$dark-color-gray: lighten($color-black, 20% );
+$mid-color-gray: lighten($color-black, 50% );
+$mid-color2-gray: lighten($color-black, 60% );
+$text-color-gray: lighten($color-black, 30% );
+
+
+$light-color-primary: lighten($color-primary, 10% );
+$dark-color-primary: darken($color-primary, 10% );
+
+$light-color-secondary: lighten($color-secondary, 10% );
+$dark-color-secondary: darken($color-secondary, 10% );
+
+$light-color-white: rgba($color-white,0.40);
+$light-2-color-white: rgba($color-white,0.80);
+$light-3-color-white: rgba($color-white,0.50);
+$light-4-color-white: rgba($color-white,0.65);
+$light-5-color-white: rgba($color-white,0.20);
+
+$fade-color-primary: tint( $color-primary, 20%);
+$fade-color-2-primary: tint( $color-primary, 40%);
+$fade-color-tertiary: tint( $color-tertiary, 80%);
+
+$fade-color-secondary: tint( $color-secondary, 50%);
+
+$opacity-color-primary: rgba($color-primary,0.95);
+
+
+
+$font-primary: Eurostile, Arial, sans-serif;
+$font-primaryMed: EurostileMed, Arial, sans-serif;
+$font-primaryBold: EurostileBla, Arial, sans-serif;

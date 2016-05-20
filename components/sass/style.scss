@@ -1,15 +1,107 @@
 /* Scss Document */
 
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('../fonts/Eurostile-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Eurostile-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Eurostile-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Eurostile-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Eurostile-Regular.svg#0735d0efaf6e6016391f5c60ce634c8d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'EurostileBla';
+  src: url('../fonts/Eurostile-Black.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Eurostile-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Eurostile-Black.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Eurostile-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Eurostile-Black.svg#cfee27e13121409057dc725e71a5ef2e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'EurostileMed';
+  src: url('../fonts/Eurostile-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Eurostile-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Eurostile-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Eurostile-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Eurostile-Medium.svg#0433b0a69aa89ec7abd38ecfca31bb5e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
 @import "compass/css3";
 @import "variables";
 @import "mixins";
 
 
 body{
-
+font-size: 16px;
+text-align: center;
 }
+
+
+/*-------------------------------------------
+navigation
+-------------------------------------------*/
+
+.navbar {
+    min-height: 70px;
+    margin-bottom: 20px;
+    border: none;
+	border-radius: 0;
+}
+
+.navbar-default {
+    background-color: $fade-color-tertiary;
+    border-color: nonr;
+}
+
+.navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $color-primary;
+	font-size: 13px;
+	line-height: 110%;
+	span {
+		display:block;
+	}
+}
+/*-------------------------------------------
+sections
+-------------------------------------------*/
+section {
+	min-height: 600px;
+	background-color: $light-color-gray; 
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+/*-------------------------------------------
+general
+-------------------------------------------*/
+
+
+h1 {
+	font-size: 42px;
+	color: $color-primary;
+	font-family:$font-primaryBold;
+}
+
 /*social icons*/
-.social-icons {
+.social-icons {    
 	text-align: center;	
 }
 
