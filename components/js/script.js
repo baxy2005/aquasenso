@@ -53,7 +53,7 @@
   }); //window scroll
   
   
-  $('#main-carousel').owlCarousel({
+  $('.owl-carousel').owlCarousel({
     items:1,
     lazyLoad:false,
     loop:true,

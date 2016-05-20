@@ -62,7 +62,8 @@ navigation
 
 .navbar-default {
     background-color: $fade-color-tertiary;
-    border-color: nonr;
+    border-color: none;
+	box-shadow: 0px 7px 7px -7px $fade-color-2-primary;
 }
 
 .navbar-nav > li > a {
@@ -81,13 +82,139 @@ navigation
 /*-------------------------------------------
 sections
 -------------------------------------------*/
-section {
+section, footer {
 	min-height: 600px;
-	background-color: $light-color-gray; 
-	margin-bottom: 15px;
 	display: flex;
 	align-items: center;
+	padding: 25px 0;
 }
+/*-------------------------------------------
+sections-2
+-------------------------------------------*/
+
+.section-2 {
+	background-color:$text-color-gray;
+	h1 {
+	color: $color-white;	
+	}
+	p {
+		color: $color-white;	
+		font-weight: bold;
+		line-height: 24px;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		span {
+			color: $color-secondary;	
+		}
+	}
+	
+}
+
+.section-4, .section-2  {
+.carousel-img img{
+	width: 100% !important;
+	height: auto !important;
+}
+}
+
+/*-------------------------------------------
+sections-3
+-------------------------------------------*/
+.section-3 {
+	.nav > li {
+		margin-bottom: 4px;
+	}
+	.nav > li:first-child {
+		color: $color-primary;
+		font-weight: 500;
+	}
+	.nav > li:last-child {
+		margin-bottom: 0px;
+	}
+	i {
+	margin-right: 7px;	
+	}
+}
+
+/*-------------------------------------------
+sections-4
+-------------------------------------------*/
+.section-4 {
+	
+	.icon-01 {
+		background-image: url(../images/aquasenso-icon-01.svg);
+	}
+	.icon-02 {
+		background-image: url(../images/aquasenso-icon-02.svg);
+	}
+	i.icon-big{
+	width: 90px;
+	height: 90px;
+	background-color: $fade-color-tertiary;
+	border-radius: 80px;
+	background-image: none;
+	margin: 0 10px;
+	}
+		i.icon-big.icon-01 {
+		padding-top: 5px;
+	}
+.item {
+	//display: flex;
+//	align-items: center;	
+}
+}
+
+.section-4, .section-5  {
+		i {
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	}
+	.icon-03 {
+		background-image: url(../images/aquasenso-icon-03.svg);
+	}
+}
+	
+/*-------------------------------------------
+sections-5
+-------------------------------------------*/
+.section-5 {
+	background-color: $fade-color-tertiary;
+	h1 {
+	@media (min-width: 992px) {
+	margin-bottom: 70px;	
+	}
+	}
+}
+
+/*-------------------------------------------
+sections-6
+-------------------------------------------*/
+.section-6 {
+	background-color: $color-primary;
+	min-height: 200px;
+	color: $color-white;
+	
+	a {
+	color: $color-white;
+	}
+	a:hover,  a:focus,  a:active{
+	color: $color-white;
+	text-decoration:underline;
+	}
+	img 	{
+	margin-bottom: 20px;
+	@media (min-width: 992px) {
+	margin-bottom: 0px;	
+	}
+	}
+	p {
+	@media (min-width: 992px) {
+	margin-bottom: 0px;	
+	}
+	}
+}
+
 
 /*-------------------------------------------
 general
@@ -98,7 +225,35 @@ h1 {
 	font-size: 42px;
 	color: $color-primary;
 	font-family:$font-primaryBold;
+	line-height: 100%;
+	margin-top: 0;
+	span {
+	color: $color-secondary !important;	
+	}
 }
+h2 {
+	font-size: 24px;
+	color: $color-primary;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+h5 {
+	color: $color-primary;
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+.double-margin-p {
+margin-bottom: 20px;	
+}
+
+i.header-brand {
+		width: 218.573px;
+		height: auto;
+		margin-right: 7px;
+}
+
 
 /*social icons*/
 .social-icons {    
