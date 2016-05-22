@@ -43,9 +43,99 @@
 @import "mixins";
 
 
+
+
+/*-------------------------------------------
+general
+-------------------------------------------*/
 body{
 font-size: 16px;
 text-align: center;
+}
+
+
+h1 {
+	font-size: 28px;
+	color: $color-primary;
+	font-family:$font-primaryBold;
+	line-height: 100%;
+	margin-top: 0;
+	span {
+	color: $color-secondary !important;	
+	}
+	@media (min-width: 992px) {
+	font-size: 42px;
+	}
+}
+h2 {
+	font-size: 24px;
+	color: $color-primary;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+h5 {
+	color: $color-primary;
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+.double-margin-p {
+margin-bottom: 20px;	
+}
+
+i.header-brand img {
+	width: 145px;
+	height: 36px;
+	@media (min-width: 992px) {
+		width: 230px;
+		height: auto;
+	}
+}
+
+.owl-theme .owl-controls .owl-buttons [class*="owl-"] {
+	display: none;
+	@media (min-width: 992px) {
+    font-size: 100px;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: $mid-color2-gray;
+    top: 50%;
+    margin-top: -110px;
+    position: absolute;
+	background: transparent;
+	}
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	
+	background: $color-primary;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: $mid-color-gray;	
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	left: 0px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	right: 0px;
+}
+
+.owl-pagination {
+	@media (min-width: 992px) {
+	display: none;
+	}
+}
+
+.owl-theme .owl-controls {
+	text-align: center;
+	margin-top: 15px;
+	@media (min-width: 992px) {
+    margin-top:0px;
+    	}
 }
 
 
@@ -139,7 +229,7 @@ navigation
 	}
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: $color-white;
+    background-color: $color-secondary;
 }
 .navbar-toggle {
     position: relative;
@@ -154,11 +244,12 @@ navigation
     border-radius: 0px;
 }
 
+
+
 /*-------------------------------------------
 sections
 -------------------------------------------*/
 section, footer {
-	min-height: 600px;
 	display: flex;
 	align-items: center;
 	padding: 25px 0;
@@ -181,16 +272,16 @@ sections-1
 		font-family: $font-primaryMed;
 		margin-bottom: 0px;
 		font-size: 24px;
-		@media (min-width: 768px) {
+		@media (min-width: 778px) {
+		font-size: 28px;
+		}
+		@media (min-width: 992px) {
 		font-size: 42px;
 		}
 		span {
 			display: block;
 		@media (min-width: 500px) {
 			display: inline;
-		}
-		@media (min-width: 768px)  and  (max-width: 991px) {
-			display: block;
 		}
 		}
 	}
@@ -210,8 +301,11 @@ sections-1
 
 		}
 	}
-	i.header-brand {
+	i.header-brand img {
 		margin-right: 0px;	
+		@media (min-width: 992px) {
+		width: 153px;
+		}
 	}
 	.feeling-pattern {
 	background-image: url(../images/aquasenso-pattern.svg), url(../images/aquasenso-pattern.svg);
@@ -274,36 +368,6 @@ sections-2
 			color: $color-secondary;	
 		}
 	}
-.owl-theme .owl-controls .owl-buttons [class*="owl-"] {
-    font-size: 100px;
-    padding: 0;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    color: $mid-color2-gray;
-    top: 50%;
-    margin-top: -110px;
-    position: absolute;
-	background: transparent;
-}
-
-.owl-theme .owl-controls .owl-buttons .owl-prev {
-	left: 0px;
-}
-.owl-theme .owl-controls .owl-buttons .owl-next {
-	right: 0px;
-}
-
-.owl-pagination {
-	@media (min-width: 992px) {
-	display: none;
-	}
-}
-
-.owl-theme .owl-controls {
-    margin-top:0px;
-    text-align: center;
-}
 }
 
 .section-4, .section-2  {
@@ -344,7 +408,18 @@ sections-3
 sections-4
 -------------------------------------------*/
 .section-4 {
-	
+	h1 br {
+	display: none;
+	@media (min-width: 992px) {
+		display: block;
+	}
+	}
+	h2 {
+	margin-top: 20px;
+	@media (min-width: 992px) {
+		margin-top: 0px;
+	}
+	}
 	.icon-01 {
 		background-image: url(../images/aquasenso-icon-01.svg);
 	}
@@ -366,16 +441,71 @@ sections-4
 	//display: flex;
 //	align-items: center;	
 }
+
+.owl-theme .owl-controls .owl-buttons [class*="owl-"] {
+	display: none;
+	@media (min-width: 992px) {
+    font-size: 100px;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: $fade-color-tertiary;
+    top: 50%;
+    margin-top: -85px;
+    position: absolute;
+	}
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	
+	background: $color-primary;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: $mid-color-gray;	
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	left: -40px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	right:-40px;
+}
+
+.owl-pagination {
+	@media (min-width: 992px) {
+	display: none;
+	}
+}
+
+.owl-theme .owl-controls {
+	text-align: center;
+	margin-top: 15px;
+	@media (min-width: 992px) {
+    margin-top:0px;
+    	}
+}
+
+
 }
 
 .section-4, .section-5  {
-		i {
-	width: 45px;
-	height: 45px;
-	display: inline-block;
+	i {
+		width: 45px;
+		height: 45px;
+		display: inline-block;
 	}
 	.icon-03 {
 		background-image: url(../images/aquasenso-icon-03.svg);
+	}
+i.header-brand  {
+	width: 145px;
+	height: 36px;
+	@media (min-width: 992px) {
+		width: 219px !important;
+		height: auto;
+		margin-right: 7px;
+	}
 	}
 }
 	
@@ -417,45 +547,6 @@ sections-6
 	margin-bottom: 0px;	
 	}
 	}
-}
-
-
-/*-------------------------------------------
-general
--------------------------------------------*/
-
-
-h1 {
-	font-size: 42px;
-	color: $color-primary;
-	font-family:$font-primaryBold;
-	line-height: 100%;
-	margin-top: 0;
-	span {
-	color: $color-secondary !important;	
-	}
-}
-h2 {
-	font-size: 24px;
-	color: $color-primary;
-	margin-bottom: 20px;
-	margin-top: 0px;
-}
-
-h5 {
-	color: $color-primary;
-	font-size: 16px;
-	margin-bottom: 0px;
-	margin-top: 15px;
-}
-.double-margin-p {
-margin-bottom: 20px;	
-}
-
-i.header-brand {
-		width: 218.573px;
-		height: auto;
-		margin-right: 7px;
 }
 
 
