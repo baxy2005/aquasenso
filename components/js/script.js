@@ -15,42 +15,42 @@
     } //location hostname
   }); //on click
 
-  //highlight navigation
-  $(window).scroll(function() {
-    var windowpos = $(window).scrollTop() + topoffset;
-    $('nav li a').removeClass('active');
-	
-	    if (windowpos > $('#link1').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link1"]').addClass('active');
-    } //windowpos
-
-    if (windowpos > $('#link2').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link2"]').addClass('active');
-    } //windowpos
-
-    if (windowpos > $('#link3').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link3"]').addClass('active');
-    } //windowpos
-
-    if (windowpos > $('#link4').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link4"]').addClass('active');
-    } //windowpos
-	
-    if (windowpos > $('#link6').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link6"]').addClass('active');
-    } //windowpos
-    if (windowpos > $('#link7').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#link7"]').addClass('active');
-    } //windowpos
-
-
-  }); //window scroll
+//  highlight navigation
+//  $(window).scroll(function() {
+//    var windowpos = $(window).scrollTop() + topoffset;
+//    $('nav li a').removeClass('active');
+//	
+//	    if (windowpos > $('#link1').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link1"]').addClass('active');
+//    } //windowpos
+//
+//    if (windowpos > $('#link2').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link2"]').addClass('active');
+//    } //windowpos
+//
+//    if (windowpos > $('#link3').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link3"]').addClass('active');
+//    } //windowpos
+//
+//    if (windowpos > $('#link4').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link4"]').addClass('active');
+//    } //windowpos
+//	
+//    if (windowpos > $('#link6').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link6"]').addClass('active');
+//    } //windowpos
+//    if (windowpos > $('#link7').offset().top) {
+//      $('nav li a').removeClass('active');
+//      $('a[href$="#link7"]').addClass('active');
+//    } //windowpos
+//
+//
+//  }); //window scroll
   
   
   $('.owl-carousel').owlCarousel({
@@ -81,3 +81,17 @@ navigationText: [
      "<i class='fa fa-angle-right'></i>"
       ],
 	    });
+
+
+ //set up ScrollMagic
+  var controller = new ScrollMagic({
+    globalSceneOptions: {
+      triggerHook: "onEnter"
+    }
+  });
+
+  //pin the navigation
+  var pin = new ScrollScene({
+  offset: 0,
+  }).setPin('#nav').addTo(controller);
+ 

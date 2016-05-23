@@ -49,8 +49,9 @@
 general
 -------------------------------------------*/
 body{
-font-size: 16px;
-text-align: center;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 90px;
 }
 
 
@@ -159,7 +160,9 @@ navigation
 }
 	
 
-
+#nav {
+z-index: 99999999;	
+}
 
 .navbar-header {
 	min-height: 70px;	
@@ -174,6 +177,9 @@ navigation
 			margin-bottom: 20px;
 		}
 	
+}
+.navbar-right {
+margin-right: 0;	
 }
 
 .navbar-default {
@@ -253,6 +259,9 @@ section, footer {
 	display: flex;
 	align-items: center;
 	padding: 25px 0;
+		@media (min-width: 992px) {
+		padding: 40px 0;
+		}
 }
 
 /*-------------------------------------------
@@ -399,8 +408,10 @@ sections-3
 			}
 	}
 	i {
-	margin-right: 7px;	
-	min-height: 45px;
+		min-height: 45px;
+		min-width: 52px
+	}
+	i img {
 	}
 }
 
@@ -408,7 +419,10 @@ sections-3
 sections-4
 -------------------------------------------*/
 .section-4 {
-	h1 br {
+@media (min-width: 992px) {
+		padding-top: 0px;
+	}
+		h1 br {
 	display: none;
 	@media (min-width: 992px) {
 		display: block;
@@ -435,13 +449,48 @@ sections-4
 	margin: 0 10px;
 	}
 		i.icon-big.icon-01 {
-		padding-top: 5px;
+		background-image: url(../images/section-4-img/aquasenso-icon-big-01.png);
+		background-repeat: no-repeat;
+		background-size: 35px 56px;
+		background-position: center 5px;
+	}
+		i.icon-big.icon-02, i.icon-big.icon-05 {
+		background-image: url(../images/section-4-img/aquasenso-icon-big-02.png);
+		background-repeat: no-repeat;
+		background-size: 60px auto;
+		background-position: center bottom;
+	}
+		i.icon-big.icon-03 {
+		background-image: url(../images/section-4-img/aquasenso-icon-big-03.png);
+		background-repeat: no-repeat;
+		background-size: 39.5% auto;
+		background-position: center top;
+	}
+		i.icon-big.icon-04 {
+		background-image: url(../images/section-4-img/aquasenso-icon-big-04.png);
+		background-repeat: no-repeat;
+		background-size: 39.5% auto;
+		background-position: center center;
 	}
 .item {
 	//display: flex;
 //	align-items: center;	
 }
 
+.icon-flash {
+	position: absolute;	
+	margin: 65px -21px 0;
+	
+}
+
+.icon-02 .icon-flash, .icon-05 .icon-flash {
+	position: absolute;	
+	margin: 3px -21px 0;
+	    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+	
+	}
 .owl-theme .owl-controls .owl-buttons [class*="owl-"] {
 	display: none;
 	@media (min-width: 992px) {
@@ -519,6 +568,12 @@ sections-5
 	margin-bottom: 70px;	
 	}
 	}
+	.img-margin {
+	margin-top: 20px;	
+	@media (min-width: 992px) {
+	margin-top: 0px;	
+	}
+	}
 }
 
 /*-------------------------------------------
@@ -549,6 +604,34 @@ sections-6
 	}
 }
 
+/*-------------------------------------------
+sections-6
+-------------------------------------------*/
+
+.section-7 { 
+font-size: 11px;
+h6 {
+	color: $color-primary;	
+	margin-bottom:0;
+}
+i {
+	width: 14px;	
+	line-height: 1.5;
+}
+.nav > li {
+	display: flex;
+	align-items: flex-start;	
+}
+.nav > li > a {
+	padding: 0;	
+}
+address {
+	margin-bottom: 20px;	
+	@media (min-width: 992px) {
+	margin-bottom: 0px;	
+	}
+}
+}
 
 /*social icons*/
 .social-icons {    
