@@ -93,6 +93,14 @@ i.header-brand img {
 		height: auto;
 	}
 }
+a {
+color: $color-primary;	
+}
+
+a:hover,  a:active, a:focus{
+color: $color-primary;	
+text-decoration: underline;
+}
 
 .owl-theme .owl-controls .owl-buttons [class*="owl-"] {
 	display: none;
@@ -256,8 +264,12 @@ margin-right: 0;
 sections
 -------------------------------------------*/
 section, footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 25px 0;
 		@media (min-width: 992px) {
 		padding: 40px 0;
@@ -394,8 +406,12 @@ sections-3
 .section-3 {
 	.nav > li {
 		margin-bottom: 4px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
 	}
 	.nav > li:first-child {
 		color: $color-primary;
@@ -605,7 +621,7 @@ sections-6
 }
 
 /*-------------------------------------------
-sections-6
+sections-7
 -------------------------------------------*/
 
 .section-7 { 
@@ -619,17 +635,39 @@ i {
 	line-height: 1.5;
 }
 .nav > li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;	
-}
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	        align-items: flex-start;	
+			}
 .nav > li > a {
 	padding: 0;	
 }
+.nav > li:last-child > a {
+	color: $color-primary;	
+}
+.nav > li:last-child > a:hover {
+	background-color: transparent;	
+	text-decoration: underline;
+}
+
+
 address {
 	margin-bottom: 20px;	
 	@media (min-width: 992px) {
 	margin-bottom: 0px;	
 	}
+}
+h2 {
+margin-bottom: 0;
+margin-top: 40px;	
+font-size: 18px;
+}
+h2 i {
+color: $color-black;	
+margin-right: 7px;
 }
 }
 
