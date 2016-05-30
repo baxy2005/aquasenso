@@ -258,7 +258,25 @@ margin-right: 0;
     border-radius: 0px;
 }
 
-
+.circle-brand {
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	border: 3px solid white;
+	margin-top: -97px;
+	background-color: $fade-color-tertiary;
+	a:first-child img {
+		z-index: 999;
+		position: absolute;
+		top: 20px;
+		left: 32px;	
+	}
+	a:last-child img {
+		top: 72px;
+		position: absolute;
+		left: 70px;
+	}
+}
 
 /*-------------------------------------------
 sections
@@ -579,7 +597,7 @@ i.header-brand  {
 sections-5
 -------------------------------------------*/
 .section-5 {
-	background-color: $fade-color-tertiary;
+	padding-top: 0;
 	h1 {
 	@media (min-width: 992px) {
 	margin-bottom: 70px;	
@@ -627,10 +645,6 @@ sections-7
 
 .section-7 { 
 font-size: 11px;
-h6 {
-	color: $color-primary;	
-	margin-bottom:0;
-}
 i {
 	width: 14px;	
 	line-height: 1.5;
@@ -670,6 +684,39 @@ h2 i {
 color: $color-black;	
 margin-right: 7px;
 }
+}
+.section-7, .section-9 {
+h6 {
+	color: $color-primary;	
+	margin-bottom:0;
+}
+	
+}
+
+/*-------------------------------------------
+sections-8
+-------------------------------------------*/
+
+.section-8 { 
+background-color: $fade-color-tertiary;
+	h3 {
+	color: $color-primary;
+	font-size: 18px;
+	}
+}
+
+/*-------------------------------------------
+sections-9
+-------------------------------------------*/
+
+.section-9 {
+	.fa {
+	font-size: 48px;
+	color: $color-primary;	
+	}
+	h1 {
+	margin-bottom: 40px;	
+	}
 }
 
 /*social icons*/
