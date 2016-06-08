@@ -282,7 +282,9 @@ margin-right: 0;
 		left: 70px;
 	}
 }
-
+.fa-television {
+	margin-left: 5px;
+}
 /*-------------------------------------------
 sections
 -------------------------------------------*/
@@ -310,6 +312,15 @@ sections-1
 		width: 100%;
 		height: auto;	
 	}
+	.video-1 {
+		position: relative;
+		margin-bottom: 5px;
+		@media (min-width: 1200px) {
+	position: absolute;
+	top: 0px;
+	left: 90%;
+		}
+	}
 	.feeling-h1 {
 		color: $color-secondary;
 		font-family: $font-primaryMed;
@@ -331,6 +342,10 @@ sections-1
 	h2 {
 		font-size: 25px;
 		font-family: $font-primaryBold;
+		margin-bottom: 5px;
+				@media (min-width: 1200px) {
+			margin-bottom: 20px;
+				}
 		@media (min-width: 500px) {
 		padding: 0 15px;
 		}
