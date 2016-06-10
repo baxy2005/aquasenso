@@ -8,7 +8,7 @@
        url('../fonts/Eurostile-Regular.woff') format('woff'), /* Modern Browsers */
        url('../fonts/Eurostile-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Eurostile-Regular.svg#0735d0efaf6e6016391f5c60ce634c8d') format('svg'); /* Legacy iOS */
-       
+
   font-style:   normal;
   font-weight:  400;
 }
@@ -20,7 +20,7 @@
        url('../fonts/Eurostile-Black.woff') format('woff'), /* Modern Browsers */
        url('../fonts/Eurostile-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Eurostile-Black.svg#cfee27e13121409057dc725e71a5ef2e') format('svg'); /* Legacy iOS */
-       
+
   font-style:   normal;
   font-weight:  400;
 }
@@ -32,7 +32,7 @@
        url('../fonts/Eurostile-Medium.woff') format('woff'), /* Modern Browsers */
        url('../fonts/Eurostile-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Eurostile-Medium.svg#0433b0a69aa89ec7abd38ecfca31bb5e') format('svg'); /* Legacy iOS */
-       
+
   font-style:   normal;
   font-weight:  400;
 }
@@ -62,7 +62,7 @@ h1 {
 	line-height: 100%;
 	margin-top: 0;
 	span {
-	color: $color-secondary !important;	
+	color: $color-secondary !important;
 	}
 	@media (min-width: 992px) {
 	font-size: 42px;
@@ -82,7 +82,7 @@ h5 {
 	margin-top: 15px;
 }
 .double-margin-p {
-margin-bottom: 20px;	
+margin-bottom: 20px;
 }
 
 i.header-brand img {
@@ -94,11 +94,11 @@ i.header-brand img {
 	}
 }
 a {
-color: $color-primary;	
+color: $color-primary;
 }
 
 a:hover,  a:active, a:focus{
-color: $color-primary;	
+color: $color-primary;
 text-decoration: underline;
 }
 
@@ -118,12 +118,12 @@ text-decoration: underline;
 }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-	
+
 	background: $color-primary;
 }
 
 .owl-theme .owl-controls .owl-page span {
-	background: $mid-color-gray;	
+	background: $mid-color-gray;
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-prev {
@@ -166,7 +166,7 @@ navigation
         float:none;
     }
 }
-	
+
 .navbar-collapse {
 		margin-top: 30px;
 		@media (min-width: 992px) {
@@ -174,11 +174,11 @@ navigation
 		}
 }
 #nav {
-z-index: 99999999;	
+z-index: 99999999;
 }
 
 .navbar-header {
-	min-height: 70px;	
+	min-height: 70px;
 }
 
 .navbar {
@@ -189,10 +189,10 @@ z-index: 99999999;
 		@media (min-width: 768px) {
 			margin-bottom: 20px;
 		}
-	
+
 }
 .navbar-right {
-margin-right: 0;	
+margin-right: 0;
 }
 
 .navbar-default {
@@ -232,7 +232,7 @@ margin-right: 0;
 .navbar-default .navbar-nav > li  {
 	width: 100%;
 	@media (min-width: 992px) {
-		width: auto;	
+		width: auto;
 	}
 }
 .navbar-default .navbar-nav > li:last-child > a {
@@ -274,7 +274,7 @@ margin-right: 0;
 		z-index: 999;
 		position: absolute;
 		top: 20px;
-		left: 32px;	
+		left: 32px;
 	}
 	a:last-child img {
 		top: 72px;
@@ -306,11 +306,11 @@ sections-1
 -------------------------------------------*/
 
 .section-1 {
-	padding-bottom: 0px;	
-	min-height: auto;	
+	padding-bottom: 0px;
+	min-height: auto;
 	.feeling-img {
 		width: 100%;
-		height: auto;	
+		height: auto;
 	}
 	.video-1 {
 		position: relative;
@@ -360,7 +360,7 @@ sections-1
 		}
 	}
 	i.header-brand img {
-		margin-right: 0px;	
+		margin-right: 0px;
 		@media (min-width: 992px) {
 		width: 153px;
 		height: 38px;
@@ -378,13 +378,13 @@ sections-1
 	}
 	.feeling-mobile {
 	width: 100%;
-	background-image: url(../images/aquasenso_feeling-mobile@x2.jpg);	
+	background-image: url(../images/aquasenso_feeling-mobile@x2.jpg);
 	height: 340px;
 	margin: 9px 0;
 	background-size: 665px 408px;
 	background-repeat: no-repeat;
 	background-position: -65px 0px;
-	
+
 	@media (min-width: 450px) {
 	background-position: 0px -80px;
 	background-size: cover;
@@ -394,13 +394,13 @@ sections-1
 	background-position: 0px -120px;
 	background-size: cover;
 		}
-	
+
 	@media (min-width: 768px) {
 		display:none;
 		}
 	}
 	.col-xs-12 {
-	padding: 0px;	
+	padding: 0px;
 	@media (min-width: 768px) {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -415,16 +415,16 @@ sections-2
 .section-2 {
 	background-color: #404040;
 	h1 {
-	color: $color-white;	
+	color: $color-white;
 	}
 	p {
-		color: $color-white;	
+		color: $color-white;
 		font-weight: bold;
 		line-height: 24px;
 		margin-top: 20px;
 		margin-bottom: 0px;
 		span {
-			color: $color-secondary;	
+			color: $color-secondary;
 		}
 	}
 }
@@ -467,6 +467,16 @@ sections-3
 	}
 	i img {
 	}
+  .video-1 {
+    position: relative;
+    margin-bottom: 5px;
+    @media (min-width: 1200px) {
+  position: absolute;
+  top: 0px;
+  left: 97%;
+    }
+  }
+
 }
 
 /*-------------------------------------------
@@ -528,22 +538,22 @@ sections-4
 	}
 .item {
 	//display: flex;
-//	align-items: center;	
+//	align-items: center;
 }
 
 .icon-flash {
-	position: absolute;	
+	position: absolute;
 	margin: 65px -21px 0;
-	
+
 }
 
 .icon-02 .icon-flash, .icon-05 .icon-flash {
-	position: absolute;	
+	position: absolute;
 	margin: 3px -21px 0;
 	    -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);
-	
+
 	}
 .owl-theme .owl-controls .owl-buttons [class*="owl-"] {
 	display: none;
@@ -560,12 +570,12 @@ sections-4
 }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-	
+
 	background: $color-primary;
 }
 
 .owl-theme .owl-controls .owl-page span {
-	background: $mid-color-gray;	
+	background: $mid-color-gray;
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-prev {
@@ -611,7 +621,7 @@ i.header-brand  {
 	}
 	}
 }
-	
+
 /*-------------------------------------------
 sections-5
 -------------------------------------------*/
@@ -619,13 +629,13 @@ sections-5
 	padding-top: 0;
 	h1 {
 	@media (min-width: 992px) {
-	margin-bottom: 70px;	
+	margin-bottom: 70px;
 	}
 	}
 	.img-margin {
-	margin-top: 20px;	
+	margin-top: 20px;
 	@media (min-width: 992px) {
-	margin-top: 0px;	
+	margin-top: 0px;
 	}
 	}
 }
@@ -637,7 +647,7 @@ sections-6
 	background-color: $color-primary;
 	min-height: 200px;
 	color: $color-white;
-	
+
 	a {
 	color: $color-white;
 	}
@@ -648,12 +658,12 @@ sections-6
 	img 	{
 	margin-bottom: 20px;
 	@media (min-width: 992px) {
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
 	}
 	}
 	p {
 	@media (min-width: 992px) {
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
 	}
 	}
 }
@@ -662,11 +672,11 @@ sections-6
 sections-7
 -------------------------------------------*/
 
-.section-7 { 
+.section-7 {
 font-size: 11px;
 padding-top:0;
 i {
-	width: 14px;	
+	width: 14px;
 	line-height: 1.5;
 }
 .nav > li {
@@ -675,39 +685,39 @@ i {
 	display: flex;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
-	        align-items: flex-start;	
+	        align-items: flex-start;
 			}
 .nav > li > a {
-	padding: 0;	
+	padding: 0;
 }
 .nav > li:last-child > a {
-	color: $color-primary;	
+	color: $color-primary;
 }
 .nav > li:last-child > a:hover {
-	background-color: transparent;	
+	background-color: transparent;
 	text-decoration: underline;
 }
 
 
 address {
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 	@media (min-width: 992px) {
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
 	}
 }
 h2 {
 margin-bottom: 0;
-margin-top: 40px;	
+margin-top: 40px;
 font-size: 18px;
 }
 h2 i {
-color: $color-black;	
+color: $color-black;
 margin-right: 7px;
 }
 }
 .section-7, .section-9 {
 h6 {
-	color: $color-primary;	
+	color: $color-primary;
 	margin-bottom:0;
 }
 		h3 {
@@ -721,7 +731,7 @@ h6 {
 sections-8
 -------------------------------------------*/
 
-.section-8 { 
+.section-8 {
 background-color: $fade-color-tertiary;
 	h3 {
 	color: $color-primary;
@@ -732,13 +742,13 @@ background-color: $fade-color-tertiary;
 	}
 	}
 	h1 {
-		margin-bottom: 10px;	
+		margin-bottom: 10px;
 		@media (min-width: 992px) {
-		margin-bottom: 40px;	
+		margin-bottom: 40px;
 	}
 	}
 	img {
-	background-color: $color-white;	
+	background-color: $color-white;
 	}
 	.col-lg-3	a:nth-of-type(2) img {
 		margin-top: 0px;
@@ -756,12 +766,12 @@ sections-9
 .section-9 {
 	.fa {
 	font-size: 48px;
-	color: $color-primary;	
+	color: $color-primary;
 	}
 	h1 {
-		margin-bottom: 10px;	
+		margin-bottom: 10px;
 		@media (min-width: 992px) {
-		margin-bottom: 40px;	
+		margin-bottom: 40px;
 	}
 	}
 	h6 {
@@ -773,8 +783,8 @@ sections-9
 }
 
 /*social icons*/
-.social-icons {    
-	text-align: center;	
+.social-icons {
+	text-align: center;
 }
 
 .social-icons .fa {
