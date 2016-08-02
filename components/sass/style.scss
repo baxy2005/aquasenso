@@ -750,7 +750,7 @@ background-color: $fade-color-tertiary;
 	img {
 	background-color: $color-white;
 	}
-	.col-lg-3	a:nth-of-type(2) img {
+	.col-lg-3	a:nth-of-type(2) img, 	.col-lg-3	a:nth-of-type(3) img {
 		margin-top: 0px;
 		@media (min-width: 992px) {
 	margin-top: 40px;
